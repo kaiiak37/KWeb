@@ -1,6 +1,6 @@
 export const environment = {
   production: false,
-  baseUrl: '/kweb/'
+  baseUrl: '/kweb'
 
 
 };
