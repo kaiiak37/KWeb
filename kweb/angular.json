@@ -25,7 +25,6 @@
             "inlineStyleLanguage": "less",
             "assets": [
               "src/assets",
-          
               {
                 "glob": "**/*",
                 "input": "public"
@@ -49,6 +48,7 @@
                   "maximumError": "8kB"
                 }
               ],
+              "baseHref": "/kweb/",
               "outputHashing": "all"
             },
             "development": {

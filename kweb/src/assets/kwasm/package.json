@@ -1,0 +1,15 @@
+{
+  "name": "krust",
+  "type": "module",
+  "version": "0.1.0",
+  "files": [
+    "krust_bg.wasm",
+    "krust.js",
+    "krust.d.ts"
+  ],
+  "main": "krust.js",
+  "types": "krust.d.ts",
+  "sideEffects": [
+    "./snippets/*"
+  ]
+}
