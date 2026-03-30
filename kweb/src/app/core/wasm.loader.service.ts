@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-// import {add} from '../../assets/kwasm/krust'
+import { environment } from '../../../src/environments/environment';
 
 @Injectable({
     providedIn: 'root'
@@ -11,10 +11,10 @@ export class WasmLoaderService {
         if (this.rustModule) return;
 
         // 1. 导入胶水代码
-
         const module = await import('../../assets/kwasm/krust.js');
         // 2. 初始化 (加载 .wasm 文件)
-        const instance = await module.default('/assets/kwasm/krust_bg.wasm');
+        var wasmPath = environment.baseUrl == null ? '/assets/kwasm/krust_bg.wasm' : `/${environment.baseUrl}/assets/kwasm/krust_bg.wasm`;
+        const instance = await module.default(wasmPath);
 
         this.rustModule = module;
     }
