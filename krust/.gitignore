@@ -1,0 +1,47 @@
+# Rust 编译产物 / 增量编译缓存
+/target/
+**/*.rs.bk
+*.pdb
+
+# Cargo 工作空间锁文件 (通常不需要提交，除非是为了固定特定的工作空间布局)
+Cargo.lock
+
+# IDE 编辑器配置
+# VSCode
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# IntelliJ IDEA / RustRover
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Vim / Emacs
+*~
+.*.sw[a-p]
+.*.swo
+.*.swp
+.netrwhist
+
+# macOS 系统文件
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows 系统文件
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Debug / Profiling 文件
+*.profraw
+*.profdata
+
+# 备份文件
+*.bak
+*.backup

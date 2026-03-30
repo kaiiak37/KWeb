@@ -1,0 +1,6 @@
+<div style="padding: 20px;">
+    <h1>DXF 文件处理工具</h1>
+    <input type="file" (change)="onFileSelected($event)" accept=".dxf" />
+    <button (click)="processDxf()" [disabled]="!selectedFile">上传并添加圆</button>
+    <!-- <p *ngIf="statusMessage">{{ statusMessage }}</p> -->
+</div>
