@@ -13,7 +13,7 @@ export class WasmLoaderService {
         // 1. 导入胶水代码
         const module = await import('../../assets/kwasm/krust.js');
         // 2. 初始化 (加载 .wasm 文件)
-        var wasmPath = environment.baseUrl == null ? '/assets/kwasm/krust_bg.wasm' : `/${environment.baseUrl}/assets/kwasm/krust_bg.wasm`;
+        var wasmPath = environment.baseUrl == null ? '/assets/kwasm/krust_bg.wasm' : `${environment.baseUrl}/assets/kwasm/krust_bg.wasm`;
 
         console.log("wasmPath=  "+wasmPath);
         const instance = await module.default(wasmPath);
